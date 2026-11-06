@@ -1,0 +1,71 @@
+{
+"cleanUrls": true,
+"functions": {
+"api/main.js": {
+"includeFiles": "{private,lib}/**"
+}
+},
+"rewrites": [
+{
+"source": "/",
+"destination": "/api/main?p=app"
+},
+{
+"source": "/agendar/:t",
+"destination": "/agendar.html"
+},
+{
+"source": "/agendar",
+"destination": "/agendar.html"
+},
+{
+"source": "/api/cron/:a",
+"destination": "/api/main?p=cron/:a"
+},
+{
+"source": "/api/agenda/:a",
+"destination": "/api/main?p=agenda/:a"
+},
+{
+"source": "/api/:a",
+"destination": "/api/main?p=:a"
+}
+],
+"crons": [
+{
+"path": "/api/cron/sync",
+"schedule": "30 11 * * *"
+},
+{
+"path": "/api/cron/backup",
+"schedule": "0 6 * * *"
+}
+],
+"headers": [
+{
+"source": "/(.*)",
+"headers": [
+{
+"key": "X-Frame-Options",
+"value": "DENY"
+},
+{
+"key": "X-Content-Type-Options",
+"value": "nosniff"
+},
+{
+"key": "Referrer-Policy",
+"value": "same-origin"
+},
+{
+"key": "Strict-Transport-Security",
+"value": "max-age=31536000"
+},
+{
+"key": "X-Robots-Tag",
+"value": "noindex"
+}
+]
+}
+]
+}

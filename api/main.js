@@ -1,0 +1,17 @@
+import h0 from '../routes/agenda/book.js'
+import h1 from '../routes/agenda/slots.js'
+import h2 from '../routes/app.js'
+import h3 from '../routes/ata.js'
+import h4 from '../routes/client.js'
+import h5 from '../routes/cron/backup.js'
+import h6 from '../routes/cron/sync.js'
+import h7 from '../routes/data.js'
+import h8 from '../routes/export.js'
+import h9 from '../routes/ingest.js'
+import h10 from '../routes/login.js'
+import h11 from '../routes/logout.js'
+import h12 from '../routes/meetings.js'
+import h13 from '../routes/state.js'
+import h14 from '../routes/sync.js'
+const R={'agenda/book':h0,'agenda/slots':h1,'app':h2,'ata':h3,'client':h4,'cron/backup':h5,'cron/sync':h6,'data':h7,'export':h8,'ingest':h9,'login':h10,'logout':h11,'meetings':h12,'state':h13,'sync':h14}
+export default async function(req,res){const u=new URL(req.url,'http://x'),p=u.searchParams.get('p')||u.pathname.replace(/^\/api\//,''),h=R[p];if(!h){res.statusCode=404;return res.end('{}')}try{await h(req,res)}catch(e){console.error(p,e);if(!res.writableEnded){res.statusCode=500;res.setHeader('content-type','application/json');res.end(JSON.stringify({error:'Erro interno'}))}}}

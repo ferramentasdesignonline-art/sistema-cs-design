@@ -1,0 +1,7 @@
+import {guard,seed,send} from '../lib/core.js'
+const REL='1bbe66ba-1e2a-4827-b1c2-75c5c615de51',GOS='901306161617'
+const iso=ms=>ms?new Date(+ms-3*36e5).toISOString().slice(0,10):null
+async function demandas(id){if(!process.env.CLICKUP_TOKEN)return null;const q=new URLSearchParams({include_closed:'true',subtasks:'false',custom_fields:JSON.stringify([{field_id:REL,operator:'ANY',value:[id]}])}),r=await fetch(`https://api.clickup.com/api/v2/list/${GOS}/task?${q}`,{headers:{authorization:process.env.CLICKUP_TOKEN}});if(!r.ok)return null;return(await r.json()).tasks.map(t=>({n:t.name,st:t.status.status,due:iso(t.due_date),id:t.id}))}
+async function meta(acc,preset){if(!process.env.META_TOKEN||!acc)return null;const q=new URLSearchParams({level:'campaign',date_preset:preset,fields:'campaign_name,spend,actions',limit:'50',access_token:process.env.META_TOKEN}),r=await fetch(`https://graph.facebook.com/v21.0/act_${acc}/insights?${q}`);if(!r.ok)return null;return(await r.json()).data.map(c=>{const a=(c.actions||[]),v=a.find(x=>/messaging_conversation_started|lead/.test(x.action_type));return{n:c.campaign_name,st:'ACTIVE',sp:+c.spend||0,r:+(v&&v.value)||0}})}
+export default async function(req,res){if(!guard(req,res))return;const id=new URL(req.url,'http://x').searchParams.get('id'),c=(await seed()).c.find(x=>x.id===id);if(!c)return send(res,404,{})
+ const[dem,m7,m30]=await Promise.all([demandas(id),meta(c.cm,'last_7d'),meta(c.cm,'last_30d')]);send(res,200,{dem:dem||undefined,m7:m7||[],m30:m30||[],mErr:!m30,dErr:!dem})}

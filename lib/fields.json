@@ -1,0 +1,329 @@
+{
+"opts": {
+"b992ea3a": {
+"k": "sat",
+"o": {
+"bd21808f": "ENTRADA",
+"bf34f9c0": "SATISFEITO",
+"b21c786b": "ATENÇÃO",
+"62e3d4b7": "INSATISFEITO",
+"bf20d2e1": "SUMIU",
+"ef5587cf": "A. PRÉVIO | SAÍDA",
+"691127b8": "RESGATE 2026",
+"303d9b60": "ENCERRADO",
+"236adcc6": "Não quer RESGATE"
+}
+},
+"38b7ca3e": {
+"k": "nps",
+"o": {
+"b616ede9": "Entrada",
+"c934c7c1": "Saída | Sumiu",
+"ffc6fce4": "Agendada | Remarcou",
+"05e8ab03": "Visita",
+"11196bcd": "Reunião",
+"a64e8d2a": "Ligação",
+"8b2b9ba0": "Falta"
+}
+},
+"42575504": {
+"k": "imp",
+"o": {
+"7d03f557": "P",
+"ee314174": "M",
+"38baa200": "G"
+}
+},
+"17c24e98": {
+"k": "ind",
+"o": {
+"12db4064": "Não teve como pedir",
+"d597ef41": "Nunca fez",
+"09ae9caf": "Pedimos esse mês",
+"78afb24a": "Disse que iria fazer",
+"cb871f20": "Fez - não fechou",
+"6531030f": "Fez - fechou antigo",
+"eb20d755": "Fez - fechou esse mês"
+}
+},
+"ded0f26e": {
+"k": "dep",
+"o": {
+"950182b9": "OK",
+"15b6de41": "Falta",
+"b25ae2b1": "Pedimos"
+}
+},
+"af5d72ca": {
+"k": "res",
+"o": {
+"33057cdc": "Conseguimos",
+"3ea70af6": "Deu positiva, ficar de olho",
+"e1727736": "Tentando",
+"5824e310": "Falta tentar",
+"a17aaf45": "Saída recente",
+"c5d927f7": "Negativa p/ voltar",
+"a418d2d1": "Não vale a pena"
+}
+},
+"caf29cb1": {
+"k": "mot",
+"o": {
+"31181d0f": "Design - arte errada",
+"5be8c446": "Tráfego - sem volume/qualidade",
+"9b9e6828": "Atendimento - muito lead, pouca venda",
+"19525d6d": "Contato - sumiu e não investiu",
+"8a0e9e5a": "Não foi culpa nossa",
+"c7394d04": "Comercial - falta de alinhamento",
+"9a5efa51": "Falha no onboarding"
+}
+},
+"d31b7718": {
+"k": "ia",
+"o": {
+"cdde6154": "Já tem",
+"0c9777f5": "Encerrado",
+"a2a48b44": "Não contratou",
+"00a309e6": "Falta | tem interesse",
+"fe98f1d7": "Criamos | contratou"
+}
+},
+"58020ccd": {
+"k": "w1",
+"o": {
+"75c95c8f": "Feito",
+"3d1d013c": "Falta",
+"a4ce9f94": "Entrada",
+"a05a0759": "Saída",
+"61c9a1f7": "Feito",
+"161b8017": "Falta",
+"3cbe969e": "Entrada",
+"7b8ea286": "Saída",
+"988cad5b": "Feito",
+"f291a810": "Falta",
+"424136c7": "Entrada",
+"2b29f753": "Saída",
+"0df845da": "Feito",
+"084f58b7": "Falta",
+"50f1541b": "Entrada",
+"08bd12e6": "Saída"
+}
+},
+"38bd9791": {
+"k": "w2",
+"o": {
+"75c95c8f": "Feito",
+"3d1d013c": "Falta",
+"a4ce9f94": "Entrada",
+"a05a0759": "Saída",
+"61c9a1f7": "Feito",
+"161b8017": "Falta",
+"3cbe969e": "Entrada",
+"7b8ea286": "Saída",
+"988cad5b": "Feito",
+"f291a810": "Falta",
+"424136c7": "Entrada",
+"2b29f753": "Saída",
+"0df845da": "Feito",
+"084f58b7": "Falta",
+"50f1541b": "Entrada",
+"08bd12e6": "Saída"
+}
+},
+"1bc7e2de": {
+"k": "w3",
+"o": {
+"75c95c8f": "Feito",
+"3d1d013c": "Falta",
+"a4ce9f94": "Entrada",
+"a05a0759": "Saída",
+"61c9a1f7": "Feito",
+"161b8017": "Falta",
+"3cbe969e": "Entrada",
+"7b8ea286": "Saída",
+"988cad5b": "Feito",
+"f291a810": "Falta",
+"424136c7": "Entrada",
+"2b29f753": "Saída",
+"0df845da": "Feito",
+"084f58b7": "Falta",
+"50f1541b": "Entrada",
+"08bd12e6": "Saída"
+}
+},
+"51675677": {
+"k": "w4",
+"o": {
+"75c95c8f": "Feito",
+"3d1d013c": "Falta",
+"a4ce9f94": "Entrada",
+"a05a0759": "Saída",
+"61c9a1f7": "Feito",
+"161b8017": "Falta",
+"3cbe969e": "Entrada",
+"7b8ea286": "Saída",
+"988cad5b": "Feito",
+"f291a810": "Falta",
+"424136c7": "Entrada",
+"2b29f753": "Saída",
+"0df845da": "Feito",
+"084f58b7": "Falta",
+"50f1541b": "Entrada",
+"08bd12e6": "Saída"
+}
+},
+"1caa75f5": {
+"k": "whats",
+"o": {
+"35128d63": "Organizado",
+"1764d6bf": "Pegamos acesso",
+"527c9f03": "Falta"
+}
+},
+"4b7bbfb5": {
+"k": "etiq",
+"o": {
+"4fabfa5c": "Etiquetamos e não usa",
+"def3871e": "Feito",
+"d0a75330": "Falta",
+"1c349e27": "Não quer"
+}
+},
+"b6422b23": {
+"k": "disp",
+"o": {
+"efb01747": "Semanal",
+"af300fa6": "Fizemos 1x",
+"43b2b5df": "Falta",
+"03521809": "Não quer"
+}
+},
+"faf18582": {
+"k": "impl",
+"o": {
+"31784426": "Mensalidade",
+"3a8009cb": "30 dias",
+"14b533d2": "Em andamento",
+"44d01596": "Implementação",
+"fe0cb110": "Falta",
+"139e5af1": "Encerrado"
+}
+},
+"ae796e0e": {
+"k": "ocul",
+"o": {
+"7f31f7aa": "Fizemos",
+"f0840b75": "Falta"
+}
+},
+"341f1560": {
+"k": "crm",
+"o": {
+"3127960d": "Etiquetas do Whats",
+"38eba9a5": "Não tem",
+"91287bf1": "Revenda Mais",
+"32987d00": "Autoconf",
+"6c241dac": "C2S",
+"5619aa49": "WA Speed",
+"f0e28c53": "Chat Center",
+"e2acb257": "Autocerto",
+"04d1502a": "Kommo",
+"f67ad975": "Excel",
+"26f3540f": "Altimus",
+"2801b6f5": "BNDV",
+"3030bd78": "Lua 4",
+"a2e4302c": "Genius",
+"08ca6835": "Cockpit",
+"42b93a8b": "Tegla",
+"70faf880": "Auto ADM"
+}
+},
+"5f04e2f7": {
+"k": "perfil",
+"o": {
+"1a055506": "Feito",
+"dc827685": "Falta"
+}
+},
+"2bb14824": {
+"k": "bio",
+"o": {
+"b3e2174f": "OK",
+"040ebca9": "X"
+}
+},
+"8a6ff7d4": {
+"k": "dest",
+"o": {
+"9190c164": "OK",
+"a719e2e8": "X"
+}
+},
+"f1149dc2": {
+"k": "foto",
+"o": {
+"bdbe6b0d": "OK",
+"b026dd33": "X"
+}
+},
+"6a9742af": {
+"k": "gmb",
+"o": {
+"0e319dd5": "Arrumado",
+"7bf11e37": "Pegamos acesso",
+"31cfa3e8": "Falta pedir acesso",
+"a1b49d2d": "Falta criar",
+"a6706521": "Pedimos acesso",
+"68c01030": "Não contratou"
+}
+},
+"e8d78099": {
+"k": "site",
+"o": {
+"65ba4fba": "Fizemos",
+"95bb9edc": "Falta",
+"e474b0d8": "Não quer"
+}
+},
+"efdc2f51": {
+"k": "saldo",
+"o": {
+"1b5bef6d": "OK",
+"a97db737": "OK",
+"d67ab2ab": "Sem saldo"
+}
+},
+"b245605f": {
+"k": "sex",
+"o": {
+"0e50d8e4": "OK",
+"d1e32a88": "Pendente",
+"139d48d8": "Sem tráfego",
+"a8cc5cd4": "Não rodou",
+"531890e5": "Resultado ruim",
+"16ac365b": "Encerrado"
+}
+},
+"0b935cda": {
+"k": "video",
+"o": {
+"4ec967e7": "Não tem",
+"db6ed484": "Pode ter",
+"5c8e43c2": "1x bônus",
+"09210e8e": "Mensal",
+"9228baa7": "Quinzenal",
+"fd4c217c": "Semanal"
+}
+}
+},
+"keep": {
+"9c8ec984": "ini",
+"c3683e53": "sai",
+"f1176bef": "vig",
+"5f16a164": "dec",
+"79248c95": "wa",
+"ab83f04d": "ata",
+"8dd97ebe": "verba",
+"c8400c27": "serv"
+}
+}
