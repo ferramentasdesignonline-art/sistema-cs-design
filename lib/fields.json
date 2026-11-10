@@ -314,6 +314,14 @@
 "9228baa7": "Quinzenal",
 "fd4c217c": "Semanal"
 }
+},
+"07c21359": {
+"k": "iaAc",
+"o": {
+"4753ea70": "Feito",
+"8e381bcb": "Falta",
+"fbd0b56f": "Não tem"
+}
 }
 },
 "keep": {
@@ -324,6 +332,18 @@
 "79248c95": "wa",
 "ab83f04d": "ata",
 "8dd97ebe": "verba",
-"c8400c27": "serv"
+"c8400c27": "serv",
+"7e6ea94d": "iaJ",
+"742bf653": "iaW",
+"1417d290": "iaN",
+"48640719": "iaE",
+"f39fa368": "vmD",
+"1422e48f": "vmPre",
+"13ad94bf": "vmPos",
+"664c7683": "vmObs",
+"d73aa0de": "drive",
+"49a91caa": "end",
+"c3459444": "npsS",
+"1bbe66ba": "r"
 }
 }
