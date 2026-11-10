@@ -13,5 +13,6 @@ import h11 from '../routes/logout.js'
 import h12 from '../routes/meetings.js'
 import h13 from '../routes/state.js'
 import h14 from '../routes/sync.js'
-const R={'agenda/book':h0,'agenda/slots':h1,'app':h2,'ata':h3,'client':h4,'cron/backup':h5,'cron/sync':h6,'data':h7,'export':h8,'ingest':h9,'login':h10,'logout':h11,'meetings':h12,'state':h13,'sync':h14}
+import h15 from '../routes/agenda/cu.js'
+const R={'agenda/book':h0,'agenda/slots':h1,'app':h2,'ata':h3,'client':h4,'cron/backup':h5,'cron/sync':h6,'data':h7,'export':h8,'ingest':h9,'login':h10,'logout':h11,'meetings':h12,'state':h13,'sync':h14,'agenda/cu':h15}
 export default async function(req,res){const u=new URL(req.url,'http://x'),p=u.searchParams.get('p')||u.pathname.replace(/^\/api\//,''),h=R[p];if(!h){res.statusCode=404;return res.end('{}')}try{await h(req,res)}catch(e){console.error(p,e);if(!res.writableEnded){res.statusCode=500;res.setHeader('content-type','application/json');res.end(JSON.stringify({error:'Erro interno'}))}}}
